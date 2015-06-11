@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/98beacon/98beacon.iml" filepath="$PROJECT_DIR$/98beacon/98beacon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Shape100.iml" filepath="$PROJECT_DIR$/Shape100.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/plltotrefreshlibrary/plltotrefreshlibrary.iml" filepath="$PROJECT_DIR$/plltotrefreshlibrary/plltotrefreshlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/social_sdk_library_project/social_sdk_library_project.iml" filepath="$PROJECT_DIR$/social_sdk_library_project/social_sdk_library_project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/togglebuttonlib/togglebuttonlib.iml" filepath="$PROJECT_DIR$/togglebuttonlib/togglebuttonlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/viewpagerindicator/viewpagerindicator.iml" filepath="$PROJECT_DIR$/viewpagerindicator/viewpagerindicator.iml" />
+    </modules>
+  </component>
+</project>

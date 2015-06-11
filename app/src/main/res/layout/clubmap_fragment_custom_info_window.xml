@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_info_bubble"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/iv_fragclub_map_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_club_default_logo" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_fragclub_map_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/club"
+                android:textColor="#646464"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_fragclub_map_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/club_address"
+                android:textColor="#ff7f7f7f"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tv_fragclub_map_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/club_phone"
+                android:textColor="#ff7f7f7f"
+                android:textSize="12dp" />
+
+            <Button
+                android:id="@+id/btn_clubmap_custom_window_join"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/join_club"
+                android:textSize="14dip"
+                android:background="@drawable/button_blue" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

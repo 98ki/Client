@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_light_gray"
+    android:orientation="vertical" >
+
+    <include layout="@layout/include_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/lyt_frag_owner_setting_password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginTop="@dimen/dp_20"
+                android:background="@drawable/btn_bg_white" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginStart="@dimen/dp_20"
+                    android:text="@string/str_change_password"
+                    android:textColor="@color/color_gray"
+                    android:textSize="18sp" >
+                </TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/iv_arrow_right" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_light_gray" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lyt_frag_owner_setting_notification"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:background="@drawable/btn_bg_white"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginStart="@dimen/dp_20"
+                    android:text="@string/str_cancel_numble"
+                    android:textColor="@color/color_gray"
+                    android:textSize="18sp" >
+                </TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/iv_arrow_right" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_light_gray" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:background="@drawable/btn_bg_white" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginStart="@dimen/dp_20"
+                    android:text="@string/str_indoor_model"
+                    android:textColor="@color/color_gray"
+                    android:textSize="18sp" >
+                </TextView>
+
+                <com.zcw.togglebutton.ToggleButton
+                    android:layout_width="45dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:layout_marginRight="@dimen/dp_20" >
+                </com.zcw.togglebutton.ToggleButton>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_light_gray" />
+            </RelativeLayout>
+<!-- lyt_frag_owner_setting_service 服务条款与隐私-->
+
+            <RelativeLayout
+                android:id="@+id/lyt_frag_owner_setting_service"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:background="@drawable/btn_bg_white" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginStart="@dimen/dp_20"
+                    android:text="@string/serviceandarticle"
+                    android:textColor="@color/color_gray"
+                    android:textSize="18sp" >
+                </TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/iv_arrow_right" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_light_gray" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lyt_frag_owner_setting_about"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:background="@drawable/btn_bg_white" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginStart="@dimen/dp_20"
+                    android:text="@string/about"
+                    android:textColor="@color/color_gray"
+                    android:textSize="18sp" >
+                </TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/iv_arrow_right" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_light_gray" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lyt_frag_owner_setting_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:background="@drawable/btn_bg_white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginStart="@dimen/dp_20"
+                    android:text="@string/str_user_feedback"
+                    android:textColor="@color/color_gray"
+                    android:textSize="18sp" >
+                </TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/iv_arrow_right" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_light_gray" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_setting_logout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_40"
+                android:background="@drawable/btn_bg_theme"
+                android:gravity="center"
+                android:textSize="@dimen/sp_16"
+                android:text="@string/logout"
+                android:textColor="@color/color_white" />
+            
+            <Button 
+                android:id="@+id/btn_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dip"
+                android:text="打开测试界面"
+                android:visibility="gone"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dip"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

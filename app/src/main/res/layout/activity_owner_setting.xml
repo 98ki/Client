@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/setting_owner"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/include_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/lyt_frag_owner_setting_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dip"
+                    android:layout_marginBottom="60dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/icon"
+                        android:textColor="@color/color_gray"
+                        android:textSize="18sp" >
+                    </TextView>
+
+                    <com.meg7.widget.CircleImageView
+                        android:id="@+id/iv_setting_owner_head"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_alignParentRight="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_unknown" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dip"
+                android:background="@color/color_light_gray"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dip"
+                    android:layout_marginBottom="20dip" >
+
+                    <TextView
+                        android:id="@+id/tv_setting_owner_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:text="@string/username"
+                        android:textColor="@color/color_gray"
+                        android:textSize="18sp" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/et_setting_owner_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tv_setting_owner_name" >
+                    </EditText>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dip"
+                android:background="@color/color_light_gray"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dip"
+                    android:layout_marginBottom="2dip"
+                    android:layout_marginTop="15dip" >
+
+                    <TextView
+                        android:id="@+id/tv_setting_owner_sex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:text="@string/sex"
+                        android:textColor="@color/color_gray"
+                        android:textSize="18sp" >
+                    </TextView>
+
+                    <RadioGroup
+                        android:id="@+id/rg_setting_owner_sex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tv_setting_owner_sex"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/rb_setting_owner_male"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/man"
+                            android:textColor="@color/color_gray" />
+
+                        <RadioButton
+                            android:id="@+id/rb_setting_owner_female"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/woman"
+                            android:textColor="@color/color_gray" />
+                    </RadioGroup>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dip"
+                android:background="@color/color_light_gray"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dip"
+                    android:layout_marginBottom="20dip"
+                    android:background="@color/color_white" >
+
+                    <TextView
+                        android:id="@+id/tv_setting_owner_height"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:text="@string/height"
+                        android:textColor="@color/color_gray"
+                        android:textSize="18sp" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/et_setting_owner_height"
+                        android:layout_width="80dip"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tv_setting_owner_height"
+                        android:ems="10"
+                        android:inputType="number" >
+                    </EditText>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/et_setting_owner_height"
+                        android:text="cm"
+                        android:textColor="@color/color_gray"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dip"
+                android:background="@color/color_light_gray"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/layout_birth_day"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dip"
+                    android:layout_marginBottom="20dip"
+                    android:background="@color/color_white" >
+
+                    <TextView
+                        android:id="@+id/tv_setting_owner_stupid1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:text="@string/birthday"
+                        android:textColor="@color/color_gray"
+                        android:textSize="18sp" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/tv_birth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:layout_toRightOf="@+id/tv_setting_owner_stupid1"
+                        android:textColor="@color/color_gray"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dip"
+                android:background="@color/color_light_gray"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dip"
+                    android:layout_marginBottom="20dip"
+                    android:background="@color/color_white" >
+
+                    <TextView
+                        android:id="@+id/tv_setting_owner_weight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:inputType="numberDecimal"
+                        android:text="@string/weight"
+                        android:textColor="@color/color_gray"
+                        android:textSize="18sp" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/et_setting_owner_weight"
+                        android:layout_width="90dip"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tv_setting_owner_weight"
+                        android:ems="10" >
+                    </EditText>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/et_setting_owner_weight"
+                        android:text="kg"
+                        android:textColor="@color/color_gray"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dip"
+                android:background="@color/color_light_gray"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="20dip"
+                android:layout_marginTop="@dimen/dp_20"
+                android:background="@color/color_white"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <Button
+                    android:id="@+id/btn_setting_owner_save"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:background="@drawable/btn_bg_theme"
+                    android:text="确认修改"
+                    android:textSize="18sp"
+                    android:textColor="@color/color_white" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

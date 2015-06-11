@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">有型客户端</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="loading">正在加载更多....</string>
+    <string name="back">返回</string>
+    <string name="maintab_home">主页</string>
+    <string name="maintab_club">俱乐部</string>
+    <string name="maintab_curr">课程表</string>
+    <string name="maintab_owner">我</string>
+    <string name="hometab_title01">首页</string>
+    <string name="hometab_title02">动态</string>
+    <string name="hometab_title03">流行</string>
+    <string name="currtab_self">我的课程</string>
+    <string name="currtab_club">俱乐部课程</string>
+    <string name="register_hint">点击上面的“注册”按钮，意味着你同意<a href="http://www.shape100.com">服务条款与隐私协议</a>。\n\n其它人可以通过你的姓名、手机号码或邮箱地址找到你，你的手机号码和邮箱地址将不会公开显示，同时你可以随时修改你的隐私设置。</string>
+    <string name="register_detail_hint">请输入您的信息，有型将帮你计算<a href="http://www.shape100.com">体质指指数（BMI）</a>,它是世界公认的评定肥胖程度的指标。在和有型一起度过的日子里，你会惊奇的发现，你的身体会越来越有型！</string>
+    <!-- Pull to Refresh -->
+    <string name="pull_to_get_more">下拉获取更多</string>
+
+    <!-- Common String -->
+    <string name="detail_info">详细信息</string>
+    <string name="icon">头像</string>
+    <string name="jump">跳过此步骤</string>
+    <string name="find_more">[查看更多...]</string>
+    <string name="confirm">确定</string>
+    <string name="cancel_filter">取消</string>
+    <string name="setting">设置</string>
+    <string name="clubdetail">俱乐部详情</string>
+    <string name="coursedetail">课程介绍</string>
+    <string name="favorite_class">喜爱的课程</string>
+    <string name="favorite_coach">喜爱的教练</string>
+    <string name="owner_setting">个人设置</string>
+
+    <!-- club String -->
+    <string name="clubinfo_share">分享俱乐部</string>
+    <string name="join_club">加入俱乐部</string>
+    <string name="exit_club">退出俱乐部</string>
+
+    <string name="share">分享</string>
+    <string name="reservation">预定</string>
+    <string name="mutual_concern">共同关注</string>
+
+    <!-- Course String -->
+    <string name="favorite_course_remove">取消关注此课程</string>
+    <string name="favorite_course_add">关注此课程</string>
+
+    <!-- Hint String -->
+    <string name="join_no_club">您还没有加入任何俱乐部</string>
+    <string name="network_error">请检查网络是否正确！</string>
+    <!-- Setting -->
+
+    <string name="logout">退出登录</string>
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unknown">发送返回</string>
+    <string name="no_class">无匹配课程</string>
+
+    <!-- 设置微博隐秘度界面 -->
+    <string name="public_all">公开</string>
+    <string name="friend_cyle">好友圈可见</string>
+    <string name="private_self">仅自己可见</string>
+
+    <!-- 设置界面 -->
+    <string name="about">关于我们</string>
+    <string name="serviceandarticle">服务条款与协议</string>
+    <string name="str_indoor_model">室内模式</string>
+    <string name="str_cancel_numble">注销手机号码（仅支持内测）</string>
+    <string name="str_change_password">密码修改</string>
+    <string name="str_user_feedback">用户反馈</string>
+
+    <!-- 动态列表 -->
+    <string name="reply">回复</string>
+    <string name="commment_hint">评论一番吧</string>
+    <string name="delete">删除</string>
+
+    <!-- 关注列表 -->
+    <string name="concern_str">+ 关注</string>
+    <string name="concern_cancle_str">取消关注</string>
+
+    <string name="copy">复制</string>
+</resources>

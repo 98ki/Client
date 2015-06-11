@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_size"
+        android:background="@color/titlebar_bg"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="张志伟"
+            android:textColor="@color/title_text"
+            android:textSize="@dimen/titletext_size" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\t\t\t\t资深私人健身教练,师大毕业，1999年开始做教练，经验丰富：擅长增肥/减肥/力量/体能训练/饮食搭配调整
+            拥有自己的健身工作室，若在福州的朋友都可以来玩嘿嘿QQ66786892  健身热线88880020
+                瑜伽、街舞、爵士舞、机械舞、肚皮舞、民族舞、拉丁、散打、跆拳道、器械健身、游泳：都可以教学"
+            android:textSize="18sp" />
+    </ScrollView>
+
+</LinearLayout>

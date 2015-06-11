@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.shape100.gym"
+    android:versionCode="18"
+    android:versionName="0.3.5.20">
+
+    <!-- 版本名字说明  第二位，测试单数，正式双数，测试高于正式，第四位，git上面的commit数 -->
+    <!-- 测试 0.3.5.20  code=18           正式 0.2.5.20 code=18 -->
+
+    <!-- Android4.3及以上才可以使用 -->
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="21" />
+
+    <!-- 需要添加蓝牙相关权限才可以使用 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <!-- 声明应用需要使用设备的蓝牙BLE -->
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+    <!-- 去掉READ_LOGS权限 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 【可选】如果需要设置前台是否显示通知，需要设置这个权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".MainApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.Shake.ShakeActivity"
+            android:theme="@android:style/Theme.NoTitleBar">
+
+        </activity>
+
+        <activity
+            android:name=".activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.GuideActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen"/>
+        <activity
+            android:name=".activity.MainActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity
+            android:name=".activity.CourseDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TrainerDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WriteBlogActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.ClubInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ClubInfoDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CoursePageActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FriendsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RegisterCodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SelectPicPopupWindow"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom" />
+        <activity
+            android:name=".activity.BigPictureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SharePopupWindow"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom"/>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SettingAboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SettingPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.OwnerSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FavoriteClassActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FavoriteCoachActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FindPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CoachPageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ServiceAndSecretActicvty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RecommendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MorePicActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ShareCoursePop"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom" />
+        <activity
+            android:name=".activity.SwitcherPhotoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" />
+        <activity
+            android:name=".activity.BlogShareActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".activity.CommentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TestShareActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PeopleDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ConcernActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DynamicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FunsOrConcernActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TestActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- #START#######使用的友盟###########注册SDK使用的Activity###################### -->
+
+
+        <!-- 用户反馈界面 -->
+        <activity
+            android:name="com.umeng.fb.ConversationActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <!-- 分享编辑页 -->
+
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize"/>
+
+        <!-- ############ QQ空间和QQ SSO授权的Activity注册 ############ -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent你的QQ互联APPID" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTransitions"/>
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- ############*******************end************** ########################## -->
+
+
+        <!-- ****************************** 友盟消息推送的组件*************************************** -->
+
+        <receiver
+            android:name="com.umeng.message.NotificationProxyBroadcastReceiver"
+            android:exported="false"/>
+        <receiver android:name="com.umeng.message.RegistrationReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.umeng.message.UmengBroadcastReceiver">
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.RECEIVE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.shape100.gym.intent.action.COMMAND" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.RE_ELECTION_V2" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.umeng.message.BootBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.umeng.message.UmengService"
+            android:exported="true"
+            android:label="shape100"
+            android:process=":pushService_v1">
+            <intent-filter>
+                <action android:name="com.shape100.gym.intent.action.START" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.shape100.gym.intent.action.COCKROACH" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.PING" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="org.android.agoo.service.ElectionService"
+            android:exported="true"
+            android:process=":pushService_v1">
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.ELECTION_V2" />
+            </intent-filter>
+        </service>
+        <service android:name="com.umeng.message.UmengIntentService" />
+        <!-- V1.3.0添加的service，负责下载通知的资源 -->
+        <service android:name="com.umeng.message.UmengDownloadResourceService" />
+        <!-- ****************************** 友盟的组件*************************************** -->
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="${AMAP_KEY_VALUE}" />
+
+
+        <!-- android:value="1d53b5e37c082b92335df20762c9448e" /> 正式 -->
+        <!-- android:value="33398cb3901f53c56ad3fd81d38215d9" /> 自己电脑 -->
+        <!-- android:value="48727b8d302e80c5f0c25c64bdeb52ae" /> 工作电脑 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="${UMENG_APPKEY_VALUE}" />
+
+        <!-- android:value="54b77bb4fd98c5fe4e000299"测试自己 -->
+        <!-- android:value="549cceaafd98c5240a000e94" 公司 -->
+
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="${UMENG_MESSAGE_SECRET_VALUE}" />
+
+        <!-- 自己873821b25b771b5d59896edea2d6e447 -->
+        <!-- 公司0ee2b5041beafd62142d1b07b132d10c -->
+
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="DEBUG" />
+    </application>
+
+</manifest>

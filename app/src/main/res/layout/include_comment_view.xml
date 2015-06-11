@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="-10dip"
+        android:layout_marginRight="-10dip"
+        android:background="@color/color_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="5dip" >
+
+        <EditText
+            android:id="@+id/et_comment_view_write"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="60dip"
+            android:hint="@string/commment_hint"
+            android:maxHeight="100dip"
+            android:maxLength="280" />
+
+        <TextView
+            android:id="@+id/tv_comment_view_send"
+            android:layout_width="50dp"
+            android:layout_height="35dip"
+            android:layout_alignBottom="@id/et_comment_view_write"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_bg_theme"
+            android:gravity="center"
+            android:text="@string/send"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</LinearLayout>

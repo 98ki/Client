@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout_out_grid"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_size"
+        android:background="@color/titlebar_bg" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_gray" />
+
+        <TextView
+            android:id="@+id/tv_checked_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_12"
+            android:background="@drawable/bg_back"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/color_white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_checked_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/dp_12"
+            android:paddingLeft="@dimen/dp_12"
+            android:gravity="center"
+            android:background="@drawable/bg_back"
+            android:text="完成"
+            android:textColor="@color/color_white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_select_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="相机交卷"
+            android:textColor="@color/color_light_gray"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <GridView
+            android:id="@+id/gride_img_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="5dip"
+            android:numColumns="3"
+            android:paddingTop="10dip"
+            android:scrollbars="none"
+            android:verticalSpacing="5dip"
+            tools:listitem="@layout/item_img_gride" />
+    </LinearLayout>
+
+</LinearLayout>

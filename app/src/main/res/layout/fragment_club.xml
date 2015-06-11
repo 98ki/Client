@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0E0E0"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_size"
+        android:background="@color/titlebar_bg" >
+
+        <RelativeLayout
+            android:id="@+id/lyt_frag_club_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/club"
+                android:textColor="@color/title_text"
+                android:textSize="@dimen/titletext_size" />
+
+            <ImageView
+                android:id="@+id/iv_frag_club_popfind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/iv_club_find_normal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lyt_frag_club_find"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="10dip"
+            android:orientation="horizontal"
+            android:visibility="invisible" >
+
+            <EditText
+                android:id="@+id/et_frag_club_find"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/dp_12"
+                android:layout_toLeftOf="@+id/iv_frag_club_find"
+                android:background="@drawable/bg_et_white"
+                android:ems="20" />
+            <ImageView
+                android:id="@+id/iv_frag_club_find"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/iv_club_find_normal" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="2dip"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:paddingTop="2dip" >
+
+        <LinearLayout
+            android:id="@+id/tab_map"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/club_button_map"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/btn_club_map_focus"
+                android:text="@string/map" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab_list"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/club_button_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/btn_club_list_normal"
+                android:text="@string/list" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/clubcontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+</LinearLayout>

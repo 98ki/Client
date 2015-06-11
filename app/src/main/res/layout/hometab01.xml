@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.flaviofaria.kenburnsview.KenBurnsView
+            android:id="@+id/iv_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/hometab_bg" />
+
+        <LinearLayout
+            android:id="@+id/layout_BMI"
+            android:layout_width="60dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_BMI_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="BMI"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/tv_hometab01_bmi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="--"
+                android:textColor="#FF0000"
+                android:textSize="28sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="25dp"
+            android:text="Shape"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:typeface="monospace" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/color_white"
+        android:orientation="vertical"
+        android:paddingBottom="10dip"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:paddingTop="10dip">
+
+        <TextView
+            android:id="@+id/tv_hometab01_morning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Good morning!"
+            android:textColor="@color/color_blue"
+            android:textSize="28sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/tv_hometab01_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:textColor="@color/color_blue"
+            android:textSize="23sp"
+            android:typeface="serif" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dip"
+            android:layout_weight="1">
+
+            <ScrollView
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.8"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dip"
+                    android:lineSpacingExtra="2dp"
+                    android:text="\t\t重点锻炼部位：下腹部位和大腿上部弯屈肌群。
+同样这个动作可以借助到床边（最好边沿可以抓握）比较宽实的凳子上，如果有条件可以使用专业的斜板，我在家常用的就是两张凳子拼在一起\n
+开始位置：仰卧在凳上，下背部紧贴凳面，两腿并拢自然伸直。\n
+动作过程：使躯干和下背部紧贴在地上，两膝稍稍弯屈，两腿向上举起直至两大腿与躯干成垂直位。然后，两腿慢慢放下。重复做
+起始姿势 坐在凳边，两手向后撑在凳上。两腿向前直伸。\n
+动作过程 屈膝缩起小腿到可能的最高点，彻底收缩腹直肌一秒钟，然后徐徐降落小腿，直到完全伸直，缩起小腿时吸气，降落时呼气。\n
+注意要点： 本动作较简易，其作用大小全在膝部上提的高低和动作的快慢上。愈高愈慢愈大，反之愈小。"
+                    android:textColor="@color/color_gray"
+                    android:textSize="14sp" />
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="45dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.1"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_hometab01_beacon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/ic_main_home_sbeacon" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,127 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        applicationId "com.shape100.gym"
+        minSdkVersion 18
+        targetSdkVersion 21
+        versionCode 10
+        versionName "0.1.1.0"
+        //dex突破65535的限制
+        multiDexEnabled true
+
+        // 默认是umeng的渠道
+        manifestPlaceholders = [UMENG_CHANNEL_VALUE: "shape100"]
+    }
+    lintOptions {
+        abortOnError false   //跳过lint检查错误
+    }
+
+    //配置签名信息
+    signingConfigs {
+
+        debug {
+            //debug签名
+            storeFile file("keystore")
+            storePassword "shape100"
+            keyAlias "shape100"
+            keyPassword "shape100"
+
+        }
+
+        //正式版签名信息
+        release {
+            storeFile file("keystore")
+            storePassword "shape100"
+            keyAlias "shape100"
+            keyPassword "shape100"
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+    repositories {
+        flatDir {
+            dirs 'libs'  //
+        }
+    }
+
+    productFlavors {
+        defaultConfig {
+            applicationId "com.shape100.gym"
+            buildConfigField("String", "CLUB_ID", "\"1000080833\"")   //自定义值，可以在代码获取
+            manifestPlaceholders = [AMAP_KEY_VALUE: "1d53b5e37c082b92335df20762c9448e", UMENG_APPKEY_VALUE: "549cceaafd98c5240a000e94", UMENG_MESSAGE_SECRET_VALUE: "0ee2b5041beafd62142d1b07b132d10c"]
+        }
+
+        meigefei {
+            applicationId "com.shape100.meigefei"
+            versionName "meigeifei-1.0"
+            buildConfigField("String", "CLUB_ID", "\"1000080833\"")
+             manifestPlaceholders = [AMAP_KEY_VALUE: "1d53b5e37c082b92335df20762c9448e", UMENG_APPKEY_VALUE: "549cceaafd98c5240a000e94", UMENG_MESSAGE_SECRET_VALUE: "0ee2b5041beafd62142d1b07b132d10c"]
+        }
+
+        haosha {
+            applicationId "com.shape100.haosha"
+            versionName "haosha-1.0"
+            buildConfigField("String", "CLUB_ID", "\"1000080833\"")
+            manifestPlaceholders = [AMAP_KEY_VALUE: "1d53b5e37c082b92335df20762c9448e", UMENG_APPKEY_VALUE: "549cceaafd98c5240a000e94", UMENG_MESSAGE_SECRET_VALUE: "0ee2b5041beafd62142d1b07b132d10c"]
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/LICENSE.txt'
+    }
+
+    buildTypes {
+        debug {
+            //显示log
+            buildConfigField("boolean", "LOG_DEBUG", "true")
+            versionNameSuffix "-debug"
+            zipAlignEnabled false   //是否zip对齐
+            minifyEnabled false  // 不混淆
+            shrinkResources false  //移除无用的resources文件
+            signingConfig signingConfigs.debug
+        }
+        release {
+            //不显示log
+            buildConfigField("boolean", "LOG_DEBUG", "false")
+
+            zipAlignEnabled true   //是否zip对齐
+            minifyEnabled false  // 混淆
+            shrinkResources true  //移除无用的resources文件
+            signingConfig signingConfigs.release
+
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            //设置导出的apk的名字
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    def outputFile = output.outputFile
+                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                        def fileName = "shape100_${defaultConfig.versionName}_${variant.productFlavors[0].name}.apk"
+                        output.outputFile = new File(outputFile.parent, fileName)
+                    }
+                }
+            }
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':plltotrefreshlibrary')
+    compile project(':social_sdk_library_project')
+    compile project(':togglebuttonlib')
+    compile project(':viewpagerindicator')
+    compile files('libs/avoscloud-sdk-v3.2.2.jar')
+    compile files('libs/fastjson.jar')
+    compile files('libs/android-async-http-1.4.6.jar')
+    compile project(':98beacon')
+}

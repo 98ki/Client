@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dip"
+    android:background="@drawable/btn_bg_white" >
+
+    <com.meg7.widget.CircleImageView
+        android:id="@+id/iv_concern_head"
+        android:layout_width="@dimen/head_width_or_height"
+        android:layout_height="@dimen/head_width_or_height"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:src="@drawable/icon_unknown" />
+
+    <TextView
+        android:id="@+id/tv_concern_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_concern_head"
+        android:layout_marginLeft="15dip"
+        android:layout_toRightOf="@id/iv_concern_head"
+        android:ellipsize="end"
+        android:paddingTop="5dip"
+        android:singleLine="true"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/tv_concern"
+        android:layout_width="80dip"
+        android:layout_height="40dip"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dip"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_concern_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_concern_head"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="10dip"
+        android:layout_toRightOf="@id/iv_concern_head"
+        android:layout_toLeftOf="@id/tv_concern"
+        android:ellipsize="end"
+        android:paddingBottom="5dip"
+        android:singleLine="true"
+        android:textColor="@color/color_gray"
+        android:textSize="14sp" />
+
+</RelativeLayout>

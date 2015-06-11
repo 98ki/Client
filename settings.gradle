@@ -1,0 +1,2 @@
+include ':app', ':plltotrefreshlibrary', ':social_sdk_library_project', ':togglebuttonlib', ':viewpagerindicator'
+include ':98beacon'

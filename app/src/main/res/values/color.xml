@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="color_red">#E94F4F</color>
+    <color name="color_blue">#40C4F9</color>
+    <color name="color_green"> #A0D46F</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_gray">#646464</color>
+    <color name="color_light_gray">#EDEDED</color>
+    <color name="color_line">#33000000</color>
+    <color name="font_dark">#373737</color>
+    <color name="font_dark_m">#646464</color>
+    <color name="font_light">#808080</color>
+    <color name="font_light_more">#989898</color>
+    <color name="font_light_m">#959595</color>
+    <color name="maintab_textcolor_normal">#A0A0A0</color>
+    <color name="maintab_textcolor_focus">#A0D46F</color>
+    <color name="titlebar_bg">#A0D46F</color>
+    <color name="title_text">#FFFFFF</color>
+    <color name="navpage">#FFE1E8EB</color>
+    <color name="color_white_gray">#F0F0F0</color>
+    <color name="translate_gray">#B1606060</color>
+    <drawable name="selector_back_press">@color/color_white_gray</drawable>
+    <drawable name="selector_back_nomal">@color/titlebar_bg</drawable>
+</resources>

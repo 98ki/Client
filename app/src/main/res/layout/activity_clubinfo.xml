@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/titlebar_size"
+            android:background="@color/titlebar_bg" >
+
+            <TextView
+                android:id="@+id/tv_clubinfo_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="俱乐部"
+                android:textColor="@color/title_text"
+                android:textSize="@dimen/titletext_size" />
+
+            <ImageView
+                android:id="@+id/iv_clubinfo_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_share"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/ScrollView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager
+                        android:id="@+id/vp_clubinfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp" />
+
+                    <com.viewpagerindicator.CirclePageIndicator
+                        android:id="@+id/cpi_clubinfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="8dp" />
+
+                    <LinearLayout
+                        android:id="@+id/tv_clubinfo_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:background="#A0000000"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/tv_clubinfo_desc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="#FFFFFF"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:text="@string/find_more"
+                            android:textColor="@color/color_green"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                    <ImageView
+                        android:id="@+id/iv_club_logo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="10dip"
+                        android:layout_marginTop="10dip" />
+                </FrameLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:background="@drawable/btn_bg_white" >
+
+                    <ImageView
+                        android:id="@+id/nothing_club_info_n1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_12"
+                        android:src="@drawable/ic_clubinfo_address" />
+
+                    <TextView
+                        android:id="@+id/nothing_club_info_n2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dip"
+                        android:layout_toRightOf="@id/nothing_club_info_n1"
+                        android:text="@string/club_address"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/nothing_clubinfo_n9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:src="@drawable/iv_arrow_right" />
+
+                    <TextView
+                        android:id="@+id/tv_clubinfo_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dip"
+                        android:layout_toLeftOf="@+id/nothing_clubinfo_n9"
+                        android:layout_toRightOf="@id/nothing_club_info_n2"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/color_line" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:background="@drawable/btn_bg_white" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/color_line" />
+
+                    <ImageView
+                        android:id="@+id/nothing_club_info_n3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_12"
+                        android:src="@drawable/ic_clubinfo_businesshours" />
+
+                    <TextView
+                        android:id="@+id/nothing_club_info_n4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dip"
+                        android:layout_toRightOf="@id/nothing_club_info_n3"
+                        android:text="@string/club_timeopen"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:src="@drawable/iv_arrow_right" />
+
+                    <TextView
+                        android:id="@+id/tv_clubinfo_businesshours"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dip"
+                        android:layout_toLeftOf="@id/iv_right"
+                        android:layout_toRightOf="@id/nothing_club_info_n4"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <com.shape100.widget.ListviewForScrollview
+                    android:id="@+id/list_expand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layoutAnimation="@anim/list_anim"
+                    android:scrollbars="none"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_tel"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:background="@drawable/btn_bg_white" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/color_line" />
+
+                    <ImageView
+                        android:id="@+id/nothing_club_info_n5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_12"
+                        android:src="@drawable/ic_clubinfo_phone" />
+
+                    <TextView
+                        android:id="@+id/nothing_club_info_n6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dip"
+                        android:layout_toRightOf="@id/nothing_club_info_n5"
+                        android:text="@string/club_phone"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/nothing_iv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:src="@drawable/iv_arrow_right" />
+
+                    <TextView
+                        android:id="@+id/tv_clubinfo_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dip"
+                        android:layout_toLeftOf="@id/nothing_iv1"
+                        android:layout_toRightOf="@id/nothing_club_info_n6"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/web_clubInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:background="@drawable/btn_bg_white" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/color_line" />
+
+                    <ImageView
+                        android:id="@+id/nothing_club_info_n7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_12"
+                        android:src="@drawable/ic_clubinfo_homepageurl" />
+
+                    <TextView
+                        android:id="@+id/nothing_club_info_n8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dip"
+                        android:layout_toRightOf="@id/nothing_club_info_n7"
+                        android:text="@string/club_url"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/nothing_iv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:src="@drawable/iv_arrow_right" />
+
+                    <TextView
+                        android:id="@+id/tv_clubinfo_homepageurl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dip"
+                        android:layout_toLeftOf="@id/nothing_iv2"
+                        android:layout_toRightOf="@id/nothing_club_info_n8"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dip"
+                    android:background="@color/color_white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="8dip" >
+
+                    <Button
+                        android:id="@+id/btn_clubinfo_join_exit"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dip"
+                        android:layout_marginBottom="20dip"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="10dip"
+                        android:layout_marginTop="30dip"
+                        android:background="@drawable/btn_bg_blue"
+                        android:padding="10dip"
+                        android:textColor="@color/color_white" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pb_clubinfo"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</FrameLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:orientation="horizontal" >
+
+        <com.meg7.widget.CircleImageView
+            android:id="@+id/iv_commenter_avatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_unknown" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:layout_toRightOf="@id/iv_commenter_avatar"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_commenter_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_light_m"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_commenter_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dip"
+                android:layout_below="@id/tv_commenter_name"
+                android:layout_alignLeft="@id/tv_commenter_name"
+                android:textColor="@color/font_light_more"
+                android:textSize="12sp" />
+        </RelativeLayout>
+        
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_comment_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="5dip"
+        android:paddingBottom="7dip"
+        android:textColor="@color/font_light_more" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_light_gray" />
+
+</LinearLayout>

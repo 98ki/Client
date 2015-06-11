@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_light_gray"
+    android:orientation="vertical" >
+
+    <com.shape100.widget.XScrollview
+        android:id="@+id/xscrollview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/img_head_bg"
+                android:layout_width="match_parent"
+                android:layout_height="250dip"
+                android:layout_weight="1"
+                android:background="@drawable/bg_frag_owner_title" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="-160dip"
+                android:orientation="vertical" >
+
+                <com.meg7.widget.CircleImageView
+                    android:id="@+id/iv_frag_owner_head"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_gravity="center_horizontal"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_unknown" />
+
+                <TextView
+                    android:id="@+id/tv_frag_owner_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:textColor="@color/color_white" />
+
+                <TextView
+                    android:id="@+id/tv_frag_owner_bmi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:textColor="@color/color_white" />
+
+                <TextView
+                    android:id="@+id/tv_frag_owner_mod"
+                    android:layout_width="80dip"
+                    android:layout_height="30dip"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="@string/edit_data"
+                    android:textColor="@color/color_white"
+                    android:textSize="13sp" />
+            </LinearLayout>
+            <!-- 上部分背景 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:color/white"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/view_dynamic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg_white"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_dynamic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/font_dark"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingTop="2dip"
+                        android:text="@string/dynamic_name"
+                        android:textColor="@color/font_light_more"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="20dip"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/white" />
+
+                <LinearLayout
+                    android:id="@+id/view_concern_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg_white"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_concern"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:textColor="@color/font_dark"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingTop="2dip"
+                        android:text="@string/concern_name"
+                        android:textColor="@color/font_light_more"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="20dip"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/white" />
+
+                <LinearLayout
+                    android:id="@+id/view_funs_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg_white"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_funs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/font_dark"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingTop="2dip"
+                        android:text="@string/funs_name"
+                        android:textColor="@color/font_light_more"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:layout_weight="1"
+                android:background="@color/color_light_gray"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/lyt_frag_owner_favorite_coach"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dip"
+                    android:layout_marginTop="1dip"
+                    android:background="@drawable/btn_bg_white"
+                    android:orientation="horizontal"
+                    android:padding="8dip" >
+
+                    <ImageView
+                        android:id="@+id/iv_frag_owner_iv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_frag_owner_favorite_coach" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:layout_toRightOf="@id/iv_frag_owner_iv1"
+                        android:text="@string/favorite_coach"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_frag_owner_favorite_coach"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/iv_arrow_right" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lyt_frag_owner_favorite_class"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dip"
+                    android:layout_marginTop="1dip"
+                    android:background="@drawable/btn_bg_white"
+                    android:orientation="horizontal"
+                    android:padding="8dip" >
+
+                    <ImageView
+                        android:id="@+id/iv_frag_owner_iv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_frag_owner_favorite_course" />
+
+                    <ImageView
+                        android:id="@+id/iv_frag_owner_favorite_course"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/iv_arrow_right" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:layout_toRightOf="@id/iv_frag_owner_iv2"
+                        android:text="@string/favorite_class"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lyt_frag_owner_dynamic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dip"
+                    android:layout_marginTop="1dip"
+                    android:background="@drawable/btn_bg_white"
+                    android:orientation="horizontal"
+                    android:padding="8dip"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/iv_frag_owner_iv4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_frag_owner_favorite_coach" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/iv_arrow_right" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:layout_toRightOf="@id/iv_frag_owner_iv4"
+                        android:text="最近的动态"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+                <!--
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dip"
+                    android:layout_marginBottom="20dip"
+                    android:background="@color/color_white"
+                    android:orientation="horizontal"
+                    android:padding="8dip" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_frag_owner_friends" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dip"
+                                                android:layout_centerVertical="true"
+                        
+                        android:text="好友圈"
+                        android:textSize="16sp" />
+                          <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/iv_arrow_right" />
+                </LinearLayout>
+                -->
+
+
+
+
+                <RelativeLayout
+                    android:id="@+id/lyt_frag_owner_shake"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dip"
+                    android:background="@drawable/btn_bg_white"
+                    android:orientation="horizontal"
+                    android:padding="8dip" >
+
+                    <ImageView
+                        android:id="@+id/iv_frag_owner_iv7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_frag_owner_heart" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/iv_arrow_right" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:layout_toRightOf="@+id/iv_frag_owner_iv7"
+                        android:text="摇一摇"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/lyt_frag_owner_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dip"
+                    android:background="@drawable/btn_bg_white"
+                    android:orientation="horizontal"
+                    android:padding="8dip" >
+
+                    <ImageView
+                        android:id="@+id/iv_frag_owner_iv3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_frag_owner_setting" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/iv_arrow_right" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:layout_toRightOf="@+id/iv_frag_owner_iv3"
+                        android:text="@string/setting"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--
+                 <com.shape100.widget.ListviewForScrollview
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                tools:listitem="@layout/item_comment" />
+            -->
+        </LinearLayout>
+        <!-- scrollview用到的 -->
+    </com.shape100.widget.XScrollview>
+
+</RelativeLayout>

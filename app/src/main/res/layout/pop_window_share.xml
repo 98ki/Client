@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/pop_share_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_style_alert_dialog_background"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_pop_share_wx"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/ic_share_wx_116" />
+
+        <Button
+            android:id="@+id/btn_pop_share_friends"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/ic_share_friends_116" />
+
+        <Button
+            android:id="@+id/btn_pop_share_wb"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/ic_share_wb_116" />
+    </LinearLayout>
+
+</RelativeLayout>

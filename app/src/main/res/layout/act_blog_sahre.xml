@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_light_gray"
+    android:orientation="vertical" >
+
+    <include layout="@layout/include_title" />
+
+    <RelativeLayout
+        android:id="@+id/layout_blog_public_check1"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="15dip"
+        android:background="@color/color_white" >
+
+        <ImageView
+            android:id="@+id/iv_blog_share_check1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/message_group_creat_check" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_toRightOf="@+id/iv_blog_share_check1"
+            android:text="@string/public_all"
+            android:textColor="@color/font_dark"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_light_gray" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_blog_public_check2"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@color/color_white" >
+
+        <ImageView
+            android:id="@+id/iv_blog_share_check2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/message_group_creat_check_default" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_toRightOf="@+id/iv_blog_share_check2"
+            android:text="@string/friend_cyle"
+            android:textColor="@color/font_dark"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_light_gray" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_blog_public_check3"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@color/color_white" >
+
+        <ImageView
+            android:id="@+id/iv_blog_share_check3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/message_group_creat_check_default" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_toRightOf="@+id/iv_blog_share_check3"
+            android:text="@string/private_self"
+            android:textColor="@color/font_dark"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_light_gray" />
+    </RelativeLayout>
+
+</LinearLayout>

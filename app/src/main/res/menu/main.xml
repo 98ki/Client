@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.shape100.gym.MainActivity" >
+
+    <item
+        android:id="@+id/share1"
+        android:orderInCategory="100"
+        android:title="分享到微博"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/share2"
+        android:orderInCategory="100"
+        android:title="分享到微信"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/share3"
+        android:orderInCategory="100"
+        android:title="分享到多个平台"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/share4"
+        android:orderInCategory="100"
+        android:title="分享到QQ空间"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/share5"
+        android:orderInCategory="100"
+        android:title="分享到微信朋友圈"
+        app:showAsAction="never"/>
+
+</menu>
